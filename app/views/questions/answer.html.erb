@@ -1,2 +1,15 @@
-<%= @answer %>
-<%= link_to "Ask again!", ask_path%>    
+<div class="container">
+    <h1>Stupid coach</h1>
+    <div class="qa">
+        <%= @question %>
+        <p>- You</p>
+    </div>
+    <br>
+    <div class="qa" id="answer">
+        <%= @answers %>
+        <p>- Coach </p>
+    </div>
+    <div class="btn-gradient">
+        <%= link_to "Ask again!", ask_path %>    
+    </div>
+</div>
